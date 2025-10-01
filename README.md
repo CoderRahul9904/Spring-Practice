@@ -19,6 +19,24 @@ Summary
 
 *   App loads the Spring context and uses the bean
 
+**Completed:** 1 October 2025
+
+A minimal Maven project demonstrating Spring Core using an XML config.xml and **Constructor injection**.
+
+Summary
+-------
+
+*   Created a Maven project
+
+*   Added spring-context dependency
+
+*   Implemented a Student POJO bean
+
+*   Wired the bean in config.xml using constructor injection
+
+*   App loads the Spring context and uses the bean
+
+*   Used the p schema and c schema and learn about the ambiguity due order of constructor-arg 
 
 Project structure
 -----------------
