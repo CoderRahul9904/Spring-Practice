@@ -1,0 +1,4 @@
+package com.springcore.ci;
+
+public class Certificate {
+}
