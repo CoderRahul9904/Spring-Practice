@@ -1,0 +1,67 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="emp2" class="com.springcore.example.Employee">
+        <property name="id" value="2"/>
+        <property name="name" value="Alice"/>
+        <property name="salary" value="50000"/>
+        <property name="skills">
+            <list>
+                <value>Devops</value>
+                <value>SpringBoot</value>
+                <null/>
+                  <!-- example: using Employee beans as elements -->
+            </list>
+        </property>
+        <property name="mentor">
+            <set>
+                <value>Rahul Mourya</value>
+                <value>Chandrakesh Ram</value>
+            </set>
+        </property>
+        <property name="salaryMap">
+            <map>
+                <entry key="HRA" value="45000"/>
+                <entry key="Travel" value="5000"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean id="emp1" class="com.springcore.example.Employee">
+        <property name="id" value="1"/>
+        <property name="name" value="Alice"/>
+        <property name="salary" value="50000"/>
+        <property name="skills">
+            <list>
+                <value>Devops</value>
+                <value>SpringBoot</value>
+                <value>Full Stack</value>
+                <!-- example: using Employee beans as elements -->
+            </list>
+        </property>
+        <property name="mentor">
+            <set>
+                <value>Rahul Mourya</value>
+                <value>Chandrakesh Ram</value>
+                <value>Ayush Katre</value>
+            </set>
+        </property>
+        <property name="salaryMap">
+            <map>
+                <entry key="HRA" value="45000"/>
+                <entry key="Travel" value="5000"/>
+            </map>
+        </property>
+    </bean>
+
+    <!-- Define emp2 and emp3 beans below -->
+
+
+
+</beans>
