@@ -6,7 +6,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class App {
     public static void main(String[] args) {
         ApplicationContext context=new ClassPathXmlApplicationContext("collectionconfig.xml");
-        Employee employees=(Employee) context.getBean("employee");
-        System.out.println(employees);
+        Employee emp1=(Employee) context.getBean("emp1");
+        System.out.println(emp1);
+        Employee emp2=(Employee) context.getBean("emp2");
+        System.out.println(emp2);
     }
 }

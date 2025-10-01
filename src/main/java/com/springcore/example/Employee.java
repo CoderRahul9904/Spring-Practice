@@ -7,12 +7,12 @@ import java.util.Set;
 public class Employee {
     private int id=0;
     private String name;
-    private List<Employee> skills;
+    private List<String> skills;
     private double salary;
-    private Map<Employee, Double> salaryMap;
-    private Set<Employee> mentor;
+    private Map<String, Double> salaryMap;
+    private Set<String> mentor;
 
-    public Employee(int id,double salary,Map<Employee, Double> salaryMap, Set<Employee> mentor, String name, List<Employee> skills) {
+    public Employee(int id,double salary,Map<String, Double> salaryMap, Set<String> mentor, String name, List<String> skills) {
         super();
         this.id = id;
         this.salaryMap = salaryMap;
@@ -31,10 +31,10 @@ public class Employee {
     public String getName() {
         return name;
     }
-    public void setSkills(List<Employee> skills) {
+    public void setSkills(List<String> skills) {
         this.skills = skills;
     }
-    public List<Employee> getSkills() {
+    public List<String> getSkills() {
         return skills;
     }
     public void setSalary(double salary) {
@@ -43,30 +43,22 @@ public class Employee {
     public double getSalary() {
         return salary;
     }
-    public void setSalaryMap(Map<Employee, Double> salaryMap) {
+    public void setSalaryMap(Map<String, Double> salaryMap) {
         this.salaryMap = salaryMap;
     }
 
-    public Map<Employee, Double> getSalaryMap() {
+    public Map<String, Double> getSalaryMap() {
         return salaryMap;
     }
-    public void setMentor(Set<Employee> mentor) {
+    public void setMentor(Set<String> mentor) {
         this.mentor = mentor;
     }
-    public Set<Employee> getMentor() {
+    public Set<String> getMentor() {
         return mentor;
     }
 
     @Override
     public String toString() {
-        String mentorNames = mentor.isEmpty()
-                ? "[]"
-                : mentor.stream()
-                .map(m -> m.name + " (id=" + m.id + ")")
-                .reduce((a, b) -> a + ", " + b)
-                .map(s -> "[" + s + "]")
-                .orElse("[]");
-
         return "Employee{" +
 
                 ", name='" + name + '\'' +
@@ -75,7 +67,9 @@ public class Employee {
 
                 ", skills=" + skills +
 
-                ", mentors=" + mentorNames +
+                ", mentors=" + mentor +
+
+                ", salaryMap=" + salaryMap +
                 '}';
     }
 }

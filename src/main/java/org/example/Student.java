@@ -1,9 +1,13 @@
 package org.example;
 
+import java.util.HashMap;
+import java.util.Set;
+
 public class Student {
     private int id;
     private String name;
     private String address;
+
 
     public void setId(int id) {
         this.id = id;

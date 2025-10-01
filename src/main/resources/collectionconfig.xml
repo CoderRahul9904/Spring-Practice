@@ -13,16 +13,16 @@
         <property name="salary" value="50000"/>
         <property name="skills">
             <list>
-                <value>Devops</value>
-                <value>SpringBoot</value>
+                <value >Devops</value>
+                <value >SpringBoot</value>
                 <null/>
                   <!-- example: using Employee beans as elements -->
             </list>
         </property>
         <property name="mentor">
             <set>
-                <value>Rahul Mourya</value>
-                <value>Chandrakesh Ram</value>
+                <value >Rahul Mourya</value>
+                <value >Chandrakesh Ram</value>
             </set>
         </property>
         <property name="salaryMap">
