@@ -2,15 +2,27 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="com.springcore.ci.Person" name="p1">
-        <constructor-arg name="name" value="Rahul" />
-        <constructor-arg name="age" value="21" type="int"/>
+    <bean class="com.springcore.ci.Certificate" name="certObj" c:certificate="OCI Devops">
+        <constructor-arg >
+            <list>
+                <value>OCI Kubernetes</value>
+                <value>OCI CLI</value>
+                <value>OCI SDK</value>
+                <value>OCI Docker</value>
+            </list>
+        </constructor-arg>
+
     </bean>
+    <bean class="com.springcore.ci.Person" name="p1"
+          c:_0="Rahul"
+          c:_1="21"
+          c:cert-ref="certObj" />
 
 
 </beans>
