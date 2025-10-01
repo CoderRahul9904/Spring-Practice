@@ -1,54 +1,35 @@
 
-Spring Core XML( Setter Getter and Constructor Till Now)
-=======================================
+# Spring Core XML (Setter & Constructor Injection)
 
-**Completed:** 30 September 2025
+**Learning Log**
 
-A minimal Maven project demonstrating Spring Core using an XML config.xml and **setter injection**.
+- **30 September 2025** → Completed **Setter Injection** using Spring XML configuration.
+- **1 October 2025** → Completed **Constructor Injection**, explored **p-schema** & **c-schema**, and resolved ambiguity issues with constructor-arg order.
 
-Summary
--------
+---
 
-*   Created a Maven project
+## What I Did
 
-*   Added spring-context dependency
+- Created a **Maven project**
+- Added **spring-context** dependency
+- Implemented a **Student POJO bean**
+- Wired the bean in `config.xml` using both **setter** and **constructor injection**
+- Explored **p-schema** and **c-schema** for cleaner XML configuration
+- Learned about ambiguity handling in constructor arguments
+- Loaded Spring context in `App.java` and used the bean successfully
 
-*   Implemented a Student POJO bean
+---
 
-*   Wired the bean in config.xml using setter injection
-
-*   App loads the Spring context and uses the bean
-
-**Completed:** 1 October 2025
-
-A minimal Maven project demonstrating Spring Core using an XML config.xml and **Constructor injection**.
-
-Summary
--------
-
-*   Created a Maven project
-
-*   Added spring-context dependency
-
-*   Implemented a Student POJO bean
-
-*   Wired the bean in config.xml using constructor injection
-
-*   App loads the Spring context and uses the bean
-
-*   Used the p schema and c schema and learn about the ambiguity due order of constructor-arg 
-
-Project structure
------------------
+## Project Structure
 
 ```bash
-String-Practice  
+Spring-Practice  
 ├─ src/main/java/org/example  
 │  ├─ App.java  
 │  └─ Student.java  
 ├─ src/main/resources  
 │  └─ config.xml  
-└─ pom.xml   
+└─ pom.xml
 ```
 
 > **Note:** config.xml must be inside src/main/resources so it is available on the classpath.
@@ -67,3 +48,8 @@ Quick tips
 *   Ensure target/classes/config.xml exists after build.
 
 *   If Spring complains about parsing config.xml, check file location, XML syntax, and encoding (use UTF-8 without BOM).
+
+📚 Source
+---------
+
+Currently learning from this YouTube playlist:[Spring Framework Tutorial - Telusko](https://www.youtube.com/playlist?list=PL0zysOflRCekeiERASkpi-crREVensZGS)
