@@ -8,20 +8,33 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="com.springcore.lifecycle.Samosa" name="samosa"
-          c:_0="Potatoes, Oil, Masala's"
-          c:_1="15"
-          init-method="hey"
-          destroy-method="bye"
+<!--    <bean class="com.springcore.lifecycle.Samosa" name="samosa"-->
+<!--          c:_0="Potatoes, Oil, Masala's"-->
+<!--          c:_1="15"-->
+<!--          init-method="hey"-->
+<!--          destroy-method="bye"-->
+<!--    >-->
+<!--        <constructor-arg>-->
+<!--            <list>-->
+<!--                <value>Very Nice in Taste</value>-->
+<!--                <value>Maharashtra ka famous Vada Pav so no Samosa</value>-->
+<!--                <value>Low cost higher in taste I love it</value>-->
+<!--            </list>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+
+    <bean class="com.springcore.lifecycle.Oro" name="oro"
+          c:_0="Black"
+          c:_1="10"
     >
         <constructor-arg>
-            <list>
-                <value>Very Nice in Taste</value>
-                <value>Maharashtra ka famous Vada Pav so no Samosa</value>
-                <value>Low cost higher in taste I love it</value>
-            </list>
+            <map>
+                <entry key="black" value="10"/>
+                <entry key="orange" value="20"/>
+                <entry key="green" value="15"/>
+                <entry key="acidic" value="15"/>
+            </map>
         </constructor-arg>
     </bean>
-
 
 </beans>
