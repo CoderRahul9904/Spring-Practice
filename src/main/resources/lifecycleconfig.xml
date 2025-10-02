@@ -23,18 +23,23 @@
 <!--        </constructor-arg>-->
 <!--    </bean>-->
 
-    <bean class="com.springcore.lifecycle.Oro" name="oro"
-          c:_0="Black"
-          c:_1="10"
-    >
-        <constructor-arg>
-            <map>
-                <entry key="black" value="10"/>
-                <entry key="orange" value="20"/>
-                <entry key="green" value="15"/>
-                <entry key="acidic" value="15"/>
-            </map>
-        </constructor-arg>
-    </bean>
+<!--    <bean class="com.springcore.lifecycle.Oro" name="oro"-->
+<!--          c:_0="Black"-->
+<!--          c:_1="10"-->
+<!--    >-->
+<!--        <constructor-arg>-->
+<!--            <map>-->
+<!--                <entry key="black" value="10"/>-->
+<!--                <entry key="orange" value="20"/>-->
+<!--                <entry key="green" value="15"/>-->
+<!--                <entry key="acidic" value="15"/>-->
+<!--            </map>-->
+<!--        </constructor-arg>-->
+<!--    </bean>-->
+    <context:annotation-config />
+    <bean name="eggRoll" class="com.springcore.lifecycle.EggrRoll"
+          p:price="30"
+          p:roll="Chapati Roll"
+    />
 
 </beans>
