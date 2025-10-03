@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+       ">
+
+    <util:list list-class="java.util.LinkedList" id="friendsforever">
+        <value>Rahul</value>
+        <value>Chandrakesh</value>
+        <value>Nizam</value>
+        <value>Anil</value>
+    </util:list>
+
+    <util:map map-class="java.util.LinkedHashMap" id="friendscount">
+        <entry key="Rahul" value="15" />
+        <entry key="Chandrakesh" value="1" />
+        <entry key="Nizam" value="5" />
+        <entry key="Anil" value="3" />
+    </util:map>
+
+    <bean class="com.springcore.standole.collection.Person" name="friends">
+        <property name="friends" ref="friendsforever" />
+        <property name="friendsCount" ref="friendscount" />
+<!--        <property name="friends">-->
+<!--            <ref bean="friendsforever" />-->
+<!--        </property>-->
+    </bean>
+
+
+</beans>
