@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="com.springcore.auto.wire.Mother" name="mother">
+        <property name="firstName" value="Sushila" />
+    </bean>
+    <bean class="com.springcore.auto.wire.Mother" name="mother1">
+        <property name="firstName" value="Sharmila" />
+    </bean>
+    <bean class="com.springcore.auto.wire.Mother" name="mother2">
+        <property name="firstName" value="Ritu" />
+    </bean>
+    <bean class="com.springcore.auto.wire.Father" name="f1" autowire="constructor">
+        <property name="fatherName" value="Santosh" />
+    </bean>
+
+
+</beans>
