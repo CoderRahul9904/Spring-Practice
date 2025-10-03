@@ -8,13 +8,13 @@
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:annotation-config />
-    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother">
+    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother123">
         <property name="firstName" value="Sushila" />
     </bean>
-    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother1">
+    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother132">
         <property name="firstName" value="Sharmila" />
     </bean>
-    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother2">
+    <bean class="com.springcore.auto.wire.annotation.Mother" name="mother213">
         <property name="firstName" value="Ritu" />
     </bean>
     <bean class="com.springcore.auto.wire.annotation.Father" name="f1">
