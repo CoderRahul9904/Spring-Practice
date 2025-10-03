@@ -1,5 +1,5 @@
 
-# Spring Core XML (Setter & Constructor Injection)
+# Spring Core 0 --> 1
 
 **Learning Log**
 
