@@ -8,5 +8,8 @@ public class App {
         ApplicationContext context = new ClassPathXmlApplicationContext("standolecollectionconfig.xml");
         Person person = (Person) context.getBean("friends");
         System.out.println(person);
+        Person person1 = (Person) context.getBean("friends");
+        System.out.println(person1.hashCode());
+        System.out.println(person.hashCode());
     }
 }

@@ -25,7 +25,7 @@
         <entry key="Anil" value="3" />
     </util:map>
 
-    <bean class="com.springcore.standole.collection.Person" name="friends">
+    <bean class="com.springcore.standole.collection.Person" name="friends" scope="prototype">
         <property name="friends" ref="friendsforever" />
         <property name="friendsCount" ref="friendscount" />
 <!--        <property name="friends">-->

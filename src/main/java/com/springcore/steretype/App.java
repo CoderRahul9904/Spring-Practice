@@ -9,6 +9,9 @@ public class App {
         Student student=context.getBean("obj",Student.class);
         System.out.println(student);
         System.out.println(student.getCourses());
+        System.out.println(student.hashCode());
+        Student student1=context.getBean("obj",Student.class);
+        System.out.println(student1.hashCode());
     }
 
 
