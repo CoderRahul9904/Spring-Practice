@@ -7,7 +7,8 @@
 - **1 October 2025** → Completed **Constructor Injection**, explored **p-schema** & **c-schema**, and resolved ambiguity issues with constructor-arg order.
 - **2 October 2025** → Completed **Bean LifeCycle**, explored **3 method of Configuring Bean Lifecycle**:- Using XML Config, Using Interface( InitializingBean, Disposable Bean ).
 - **3 October 2025** → Completed **AutoWiring** covered byName, byType, constructor and @autowired annotation.
-- **4 October 2025** → Completed **Standalone Collection** covering .......
+- **4 October 2025** → Completed **Standalone Collection** covered.
+- **5 October 2025** → Completed **Stereotype Annotation, SingleTon, Bean Scope** covered.
 
 ---
 
