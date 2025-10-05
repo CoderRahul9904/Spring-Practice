@@ -3,6 +3,8 @@ package com.springcore.steretype;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component("obj")
 public class Student {
     @Value("Rahul")
@@ -11,6 +13,16 @@ public class Student {
     private String studentID;
     @Value("Male")
     private String studentGender;
+    @Value("#{course}")
+    private List<String> courses;
+
+    public void setCourses(List<String> courses) {
+        this.courses = courses;
+    }
+
+    public List<String> getCourses() {
+        return courses;
+    }
 
     public void setStudentName(String studentName) {
         this.studentName = studentName;
