@@ -6,7 +6,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
     public static void main(String[] args) {
         ApplicationContext context=new AnnotationConfigApplicationContext(JavaConfig.class);
-        Father father=(Father)context.getBean("father");
-        System.out.println(father);
+//        Father father=(Father)context.getBean("getFatherInfo");
+//        System.out.println(father);
+        Mother mother=(Mother)context.getBean("info");
+        System.out.println(mother);
+
     }
 }
