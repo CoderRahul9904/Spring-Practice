@@ -9,6 +9,7 @@
 - **3 October 2025** → Completed **AutoWiring** covered byName, byType, constructor and @autowired annotation.
 - **4 October 2025** → Completed **Standalone Collection** covered.
 - **5 October 2025** → Completed **Stereotype Annotation, SingleTon, Bean Scope, Spring expression language** covered.
+- **6 October 2025** → Completed **Spring JDBC** covering......
 
 ---
 
