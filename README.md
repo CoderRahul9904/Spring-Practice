@@ -10,6 +10,7 @@
 - **4 October 2025** → Completed **Standalone Collection** covered.
 - **5 October 2025** → Completed **Stereotype Annotation, SingleTon, Bean Scope, Spring expression language** covered.
 - **6 October 2025** → Completed **Spring JDBC** covering......
+- **7 October 2025** → After a long break( due to interviews ) **Spring JDBC** started implementation......
 
 ---
 
