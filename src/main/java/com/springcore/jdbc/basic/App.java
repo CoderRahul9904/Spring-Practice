@@ -1,5 +1,7 @@
 package com.springcore.jdbc.basic;
 
+import com.springcore.jdbc.basic.dao.StudentDao;
+import com.springcore.jdbc.basic.entities.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,8 +12,12 @@ public class App {
         JdbcTemplate jdbcTemplate = (JdbcTemplate) context.getBean("jdbcTemplate");
 
         //sql query
-        String sql = "insert into students(sid,name,surname,address) values(?,?,?,?)";
-        int result=jdbcTemplate.update(sql,21,"Rahul","Mourya","Near Jai Hind High School Pimpri - 17");
+        StudentDao studentDao = (StudentDao) context.getBean("StudentDao");
+        Student student = new Student();
+        student.setAddress("Pune");
+        student.setSid(3);
+        student.setSname("Shambhavi");
+        int result = studentDao.insert(student);
         System.out.println(result);
     }
 }
