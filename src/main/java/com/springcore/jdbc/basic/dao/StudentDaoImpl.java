@@ -1,7 +1,11 @@
 package com.springcore.jdbc.basic.dao;
 
 import com.springcore.jdbc.basic.entities.Student;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+import java.util.List;
 
 public class StudentDaoImpl implements StudentDao{
     private JdbcTemplate jdbcTemplate;
@@ -10,6 +14,22 @@ public class StudentDaoImpl implements StudentDao{
         String sql="insert into students(sid,name,surname,address) values(?,?,?,?)";
         int result=jdbcTemplate.update(sql,student.getSid(),student.getSname(),"Gandhi",student.getAddress());
         return result;
+    }
+
+    @Override
+    public Student getStudent(int studentId) {
+        RowMapper<Student> studentRowMapper = new RowMapperImpl();
+        String sql="select * from students where sid=?";
+        Student student=this.jdbcTemplate.queryForObject(sql, studentRowMapper, studentId);
+        return student;
+    }
+
+    @Override
+    public List<Student> getAllStudents() {
+        String sql="select * from students";
+        RowMapper<Student> studentRowMapper = new RowMapperImpl();
+        List<Student> student=this.jdbcTemplate.query(sql, studentRowMapper);
+        return student;
     }
 
     @Override

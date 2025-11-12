@@ -6,6 +6,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -18,12 +19,16 @@ public class App {
         StudentDao studentDao = (StudentDao) context.getBean("StudentDao");
         Student student = new Student();
         student.setAddress("Pune");
-        student.setSid(3);
-        student.setSname("Shambhavi");
+        student.setSid(6);
+        student.setSname("Soniya");
 
-        System.out.println("Please enter the id you wanna delete");
-        int id = sc.nextInt();
-        int result = studentDao.delete(id);
-        System.out.println(result);
+//        int result = studentDao.insert(student);
+
+//        System.out.println("Please enter the id you wanna delete");
+//        int id = sc.nextInt();
+        List<Student> result = studentDao.getAllStudents();
+        for(Student s:result){
+            System.out.println(s);
+        }
     }
 }
