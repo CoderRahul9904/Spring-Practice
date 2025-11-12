@@ -3,13 +3,19 @@ package com.springcore.jdbc.withConfig.dao;
 import com.springcore.jdbc.withConfig.dao.RowMapperImpl;
 import com.springcore.jdbc.withConfig.dao.StudentDao;
 import com.springcore.jdbc.withConfig.entities.Student;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component("StudentDao")
 public class StudentDaoImpl implements StudentDao {
+
+    @Autowired
     private JdbcTemplate jdbcTemplate;
 
     public int insert(Student student) {

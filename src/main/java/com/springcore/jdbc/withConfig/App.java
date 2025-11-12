@@ -12,8 +12,8 @@ public class App {
         //Insert Operation
         Student student =new Student();
         student.setAddress("Pune");
-        student.setSid(10);
-        student.setSname("Ram");
+        student.setSid(11);
+        student.setSname("Shyam");
 
         StudentDao studentDao=(StudentDao)context.getBean("StudentDao");
         int result=studentDao.insert(student);
