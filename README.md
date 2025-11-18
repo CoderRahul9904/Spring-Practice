@@ -15,6 +15,7 @@
 - **22 October 2025** → **Spring JDBC** implemented basic jdbc CRUD operation...
   ## PLACED IN CAPGEMINI
 - **12 November 2025** → **Row Mapper and ORM**
+- **18 November 2025** → **Hibernate**
 ---
 
 ## What I Did
