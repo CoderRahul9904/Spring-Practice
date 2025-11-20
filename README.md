@@ -16,6 +16,7 @@
   ## PLACED IN CAPGEMINI
 - **12 November 2025** → **Row Mapper and ORM**
 - **18 November 2025** → **Hibernate**
+- **19 November 2025** → **Spring Hibernate**
 ---
 
 ## What I Did
