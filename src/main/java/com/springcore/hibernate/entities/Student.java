@@ -1,6 +1,7 @@
 package com.springcore.hibernate.entities;
 
-import jakarta.persistence.*;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name= "students")
