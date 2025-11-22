@@ -1,7 +1,9 @@
 package com.springcore.orm.entities;
 
-import jakarta.persistence.*;
+
 import org.springframework.orm.hibernate5.HibernateTemplate;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name= "students")
