@@ -27,6 +27,7 @@ public class App {
             transaction.commit();
 
             System.out.println("Successfully persisted student");
+
         } catch (RuntimeException e) {
             if(transaction!=null)
                 transaction.rollback();
