@@ -18,6 +18,7 @@
 - **18 November 2025** → **Hibernate**
 - **19 November 2025** → **Spring Hibernate**
 - **20 November 2025** → **MVC**
+- **21 November 2025** → **MVC- First understanding servlet**
 ---
 
 ## What I Did
